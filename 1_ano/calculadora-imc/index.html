@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Calculadora IMC</title>
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funcao.js"></script>
+
+</head>
+<body>
+
+    <br>
+
+    <div class="row">
+        
+        <div class="quadrado">
+            <div style="border-bottom: 2.4px solid black; text-align: center;">
+                <h1>Calculadora - IMC</h1>
+            </div>
+            <br>
+            <h3>Nome: <input class="escrever" type="text" id="nome" style="margin-left: 20px; width: 40%;"></h3>
+            <h3>Altura: <input class="escrever" type="text" id="altura" style="margin-left: 19px; width: 40%;"></h3>
+            <h3>Peso: <input class="escrever" type="text" id="peso" style="margin-left: 32px; width: 40%;"></h3>
+            <button onclick="calcular()">Calcular</button>
+            <br>
+            <br>
+            <br>
+            <div class="mostrar" style="text-align: center;"><h4 id="visor"></h4></div>
+            <br>
+        </div>
+
+    </div>
+    
+    <br>
+
+</body>
+</html>

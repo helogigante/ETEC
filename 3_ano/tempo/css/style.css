@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343d6c;
+    padding: 20px;
+    transition: background-color 2.5s ease;
+}
+
+.body {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    border-radius: 20px;
+    background-color: #384071;
+    width: 250px;
+    height: 35px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+
+button {
+    background-color: #1e2342;
+    border: none;
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #323b70;
+}
+
+.colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-container {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+}
+
+.icon-container img {
+    width: 150%;
+    margin-left: -25px;
+}
+
+.icon-container {
+    position: absolute;
+    top: -140px;
+    text-align: center;
+    margin-left: 345px;
+}
+
+#mapa {
+    margin-top: 70px;
+}
+
+#icone {
+    width: 100%;
+}
+
+.umidade, .vento, .pressao {
+    background-color: #3c4574;
+    border-radius: 20px;
+    width: 300px;
+    height: 80px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: left;
+    transition: background-color 2.5s ease;
+}
+
+.umidade p, .vento p, .pressao p {
+    color: #bcbecc;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.umidade img, .vento img, .pressao img {
+    width: 30px;
+    margin-right: 8px;
+}
+
+span {
+    margin-left: 5px;
+}
+
+#weathericon {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    visibility: hidden;
+}
+
+#weathericon[src] {
+    visibility: visible;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Guiche</title>
+    <link rel="icon" type="image/png" href="img/icon2.png"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/guiche.css">
+    <script src="js/index.js"></script>
+
+</head>
+<body onload="montaData()">
+
+    <a href="recepcao.html"><button class="voltar">Voltar</button></a>
+
+    <div class="row">
+        
+        <div class="result" style="margin-left:80px">
+            <div class="col">
+                <p>
+                    CHAMADAS
+                    ---------
+                    <div class="mostrar-senha" id="monitor-senha"></div>
+                </p>
+                
+            </div>            
+
+        </div>  
+
+        <div class="col1">
+            <div class="col">
+                <marquee>
+                    <h1 style="color: black;">ATENÇÃO! FIQUE ATENTO A CHAMADA!</h1>
+                </marquee>
+                <img src="img/monitor.png" style="width: 110%; margin-top: 20px; margin-left: -25px;">
+                <div class="monitor" id="monitor"></div>
+            </div>
+        </div>
+        
+        <div class="col2">
+            <input class="mostrar" type="text" disabled id="visor">
+            <br>
+            <button class="chamar" onclick="chamarSenha()">CHAMAR</button>
+            <br>
+            <img src="img/saude.png" alt="" style="margin-top: 15%; width: 30%;">
+
+            <div class="info">
+                <div id="data"></div>
+                <div id="hora"></div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

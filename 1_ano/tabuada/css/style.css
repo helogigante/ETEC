@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.row{
+    margin-top: 18px;
+    border: solid;
+    color: black;
+    text-align: center;
+    width: 97%;
+    margin-left: 16px;
+}
+
+.row img{
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 85px;
+}
+
+.col h5{
+    margin-top: 15px;
+    text-align: center;
+}
+
+button{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mostrar{
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    border: solid;
+    color:#c78153;
+    height: 300px;
+    background-color: #ffe8d8;
+}
+
+.escrever{
+    width: 25%;
+    height: 30px;
+    text-align: center;
+}

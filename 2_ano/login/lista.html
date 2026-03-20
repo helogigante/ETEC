@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Listagem</title>
+    <link rel="icon" type="image/png" href="image/icon2.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/listar.css">
+    <script src="js/listar.js"></script>
+</head>
+<body>
+    <br>
+    <a href="index.html">< voltar</a>
+
+    <div class="container-fluid">
+        
+        <div class="row">
+            <h2 style="margin-top: 5%;">Lista de Cadastro</h2>
+            
+            <div class="modal-body">
+                
+                <table class="table table-striped">
+                    
+                    <thead>
+                        <tr>
+                            <th id="musuario">Usuário</th>
+                            <th id="memail" style="text-align: center;">E-mail</th>
+                            <th id="msenha" style="text-align: center;">Senha</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="lnome"></tbody>
+                </table>
+                <button type="button" class="btn btn-primary" onclick="lista()">Listar</button>
+            
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

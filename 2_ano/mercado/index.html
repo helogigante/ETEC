@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Mercado Livre</title>
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Libre Barcode 128' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/function.js"></script>
+</head>
+<body onload="montaData()">
+
+    
+    <div class="grid-container">
+        <div class="pagamento">
+            <img src="img/icon2.png" style="width: 100%;">
+            
+            <br>
+            
+            <img class="pix" src="img/pix.png"><img class="visa" src="img/visa.png">
+            <img class="boleto" src="img/boleto.png"><img class="dc" src="img/dc.png">
+            <img src="img/dinheiro.png" style="width: 90px; margin: auto; display: block;">
+    
+            <br>
+    
+            <button onclick="gerarNotaFiscal()" style="margin-top: 100px;">NOTA FISCAL</button>
+            
+            <br>
+    
+            <div class="horario">
+                <div class="data" id="data"></div>
+                <div class="hora" id="hora"></div>
+            </div>
+        </div>
+
+        <div class="produtos">
+            <div class="visor" id="foto">
+                <img class="qua" src="img/quadra.png" id="quadrado"> 
+            </div>
+            
+            
+            <br>
+
+            <div class="grid-container1">
+                <p id="barra" class="barcode"></p>
+            </div>
+
+            <br>
+
+            <div class="grid-container2">
+                <div class="produto">
+                    <label for="produto">Produto:</label>
+                    <input id="produto" onkeydown="verificaEnter(event)" style="border: solid 1px; width: 100px; height: 30px; text-align: center;">
+                </div>
+                <div class="quantidade">
+                    <label for="qtde">Qtde:</label>
+                    <input id="qtde" type="text" style="border: solid 1px; width: 50px; height: 30px; text-align: center;">
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="grid-container3">
+                <div class="um">
+                    <input class="mostrar" disabled id="total">
+                    <h4 style="text-align: center; margin-top: 10px; color: rgb(41,50,125);">TOTAL</h4>
+                </div>
+                <div class="dois">
+                    <input class="mostrar" id="recebido">
+                    <h4 style="text-align: center; margin-top: 10px; color: rgb(41,50,125);">RECEBIDO</h4>
+                </div>
+                <div class="tres">
+                    <input class="mostrar" disabled id="troco">
+                    <h4 style="text-align: center; margin-top: 10px; color: rgb(41,50,125);">TROCO</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="lista">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>PRODUTO</th>
+                        <th>PREÇO</th>
+                        <th>QTDE</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="carrinho">
+            <div class="ticket"></div>
+            
+            <br>
+            <br>
+
+            <button onclick="finalizarCompra()">Finalizar</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>

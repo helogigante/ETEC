@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Urna Eleitoral</title>
+    <link rel="icon" type="image/png" href="img/icon.jpg"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funcao.js"></script>
+
+</head>
+<body>
+
+    <div class="row">
+        
+        <div class="col">
+            <div class="mostrar" id="foto">
+                <img class="qua" src="img/Quadrado.png" id="quadrado">
+            </div>
+            <br>
+            <br>
+            <div class="num1"><input class="mos1" type="text" id="mostrar"></div>
+            <div class="num2"><input class="mos2" type="text" id="mostrar2"></div>
+            <div class="num3"><input class="mos3" type="text" id="mostrar3"></div>
+            <br>
+        </div>
+
+        <br>
+        <br>
+
+        <h4>200 = Satoru Gojo</h4>
+        <h4>201 = Kinji Hakari</h4>
+        <h4>202 = Yuuta Okkotsu</h4>
+        <h4>203 = Yuuji Itadori</h4>
+        <h4>204 = Choso</h4>
+        
+        <div class="digitar">
+            <img src="img/simbolo-semfundo.png" alt="">
+            <h1>JUJUTSU</h1>
+            <h3>Eleitoral</h3>
+            <br>
+            <button class="btn" type="button" onclick="digitar('1')">1</button>
+            <button class="btn" type="button" onclick="digitar('2')">2</button>
+            <button class="btn" type="button" onclick="digitar('3')">3</button>
+            <br>
+            <button class="btn" type="button" onclick="digitar('4')">4</button>
+            <button class="btn" type="button" onclick="digitar('5')">5</button>
+            <button class="btn" type="button" onclick="digitar('6')">6</button>
+            <br>
+            <button class="btn" type="button" onclick="digitar('7')">7</button>
+            <button class="btn" type="button" onclick="digitar('8')">8</button>
+            <button class="btn" type="button" onclick="digitar('9')">9</button>
+            <br>
+            <button class="btn" type="button" onclick="digitar('0')" style="margin-left: 65px;">0</button>
+            <br>
+            <button class="btn lar" type="button" onclick="limpar()">CORRIGE</button>
+            <button class="btn bran" type="button" onclick="semvoto()">BRANCO</button>
+            <button class="btn verde" type="button" onclick="confirmar()">CONFIRMAR</button>
+        </div>
+    </div>
+    
+    <br>
+
+</body>
+</html>

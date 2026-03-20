@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Calculadora</title>
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funcao.js"></script>
+
+</head>
+<body>
+
+    <div class="calcular">
+        <div class="mostrar"><input class="display-box" type="text" id="resultado" disabled></div>
+        <br>
+        <button class="btn" type="button" onclick="limpar()" id="btn" style="color: rgb(255, 0, 0);">C</button>
+        <button class="btn" type="button" onclick="display(')')" style="margin-left: 0px; background: #00bfffd4;">(  )</button>
+        <button class="btn" type="button" onclick="display(' / ')" style="margin-left: 0px; background: #00bfffd4;">%</button>
+        <button class="btn" type="button" onclick="display(' / ')" style="margin-left: 0px; background: #00bfffd4;">÷</button>
+        <br>
+        <button class="btn" type="button" onclick="display('7')">7</button>
+        <button class="btn" type="button" onclick="display('8')" style="margin-left: 0px;">8</button>
+        <button class="btn" type="button" onclick="display('9')" style="margin-left: 0px;">9</button>
+        <button class="btn" type="button" onclick="display(' * ')" style="margin-left: 0px; background: #00bfffd4;">x</button>
+        <br>
+        <button class="btn" type="button" onclick="display('4')">4</button>
+        <button class="btn" type="button" onclick="display('5')" style="margin-left: 0px;">5</button>
+        <button class="btn" type="button" onclick="display('6')" style="margin-left: 0px;">6</button>
+        <button class="btn" type="button" onclick="display(' - ')" style="margin-left: 0px; background: #00bfffd4;">-</button>
+        <br>
+        <button class="btn" type="button" onclick="display('1')">1</button>
+        <button class="btn" type="button" onclick="display('2')" style="margin-left: 0px;">2</button>
+        <button class="btn" type="button" onclick="display('3')" style="margin-left: 0px;">3</button>
+        <button class="btn" type="button" onclick="display(' + ')" style="margin-left: 0px; background: #00bfffd4;">+</button>
+        <br>
+        <button class="btn" type="button" onclick="display('(-')" style="background: #00bfffd4;">+/-</button>
+        <button class="btn" type="button" onclick="display('0')" style="margin-left: 0px;">0</button>
+        <button class="btn" type="button" onclick="display('.')" style="margin-left: 0px; background: #00bfffd4;">.</button>
+        <button class="btn" type="button" onclick="calcular()" id="btn" style="margin-left: 0px; background: #00bfffd4;">=</button>
+        <br>
+        <br>
+    </div>
+    
+</body>
+</html>

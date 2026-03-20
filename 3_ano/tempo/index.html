@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Previsão do Tempo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+
+    <link rel="icon" type="image/png" href="image/icon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body">
+        <form action="">
+            <label for="cidade" style="color: white; font-size: 20px;">Cidade: </label>
+            <input type="text" id="cidade">
+            <button onclick="BuscaTempo()">Buscar</button>
+            <button onclick="buscarLocalizacao()">Localização</button>
+        </form>
+    </div>
+    <br>
+    <div class="colunas">
+        <div class="grid">
+            <div class="painel" id="painel" style="text-align: left;">
+                <span id="local" style="font-size: 30px; color: #bcbecc; font-weight: bold;"></span>
+                <br>
+                <p style="font-size: 50px; margin-top: -5px;"><span id="temperatura" ></span>°C</p>
+                <p style="font-size: 20px; margin-top: -50px;">
+                    <span id="mintemp"></span>°C / <span id="maxtemp"></span>°C
+                </p>
+                <div class="image" style="margin-top: -40px;">
+                    <div class="icon-container">
+                        <img id="weathericon">
+                        <p id="descricao" style="margin-top: -35px; font-size: 20px;"></p>
+                    </div>
+                    <div id="mapa">
+                        <img id="icone">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="umidade" style="margin: auto;">
+                <p style="color: #bcbecc; margin-left: 10px; margin-top: -10px;"><img src="./image/umidade.png" style="width: 10%; margin-top: 10px;"> Umidade</p>
+                <span id="umidade"></span>%
+            </div>
+            <br>
+            <div class="vento" style="margin: auto;">
+                <p style="color: #bcbecc; margin-left: 10px; margin-top: -10px;"><img src="./image/ventos.png" style="width: 10%; margin-top: 10px;"> Vento</p>
+                <span id="vento"></span> km/h
+            </div>
+            <br>
+            <div class="pressao" style="margin: auto;">
+                <p style="color: #bcbecc; margin-left: 10px; margin-top: -10px;"><img src="./image/pressao.png" style="width: 10%; margin-top: 10px;"> Pressão</p>
+                <span id="pressao"></span> mb
+            </div>
+        </div>
+    </div>
+</body>

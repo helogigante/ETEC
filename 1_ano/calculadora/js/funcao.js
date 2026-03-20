@@ -1,0 +1,13 @@
+function limpar(){
+    document.getElementById("resultado").value = "";
+}
+
+function display(value){
+    document.getElementById("resultado").value += value;
+}
+
+function calcular(){
+    var p = document.getElementById("resultado").value;
+    var q = eval(p);
+    document.getElementById("resultado").value = q;
+}

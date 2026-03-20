@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Gerador de Senha</title>
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+
+</head>
+<body onload="montaData()">
+    <a href="recepcao.html"><button class="voltar">Voltar</button></a>
+
+    <div class="row">
+
+        <div class="result">
+            <input class="mostrar" id="visor" readonly>
+            <div class="col">
+                <img src="img/saude.png" alt="" style="margin-top: 25%; width: 40%;">
+                <div class="info">
+                    <div id="data"></div>
+                    <div id="hora"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col1">
+            <div class="col">
+                <img src="img/idoso.png" type="button" style="width: 25%;" onclick="pegaSenha('E')">
+                <img src="img/senha.png" type="button" style="margin-left: 8%; width: 25%;" onclick="pegaSenha('N')">
+            </div>
+        
+            <div class="senha" id="papel">
+                <img src="img/saude.png" alt="" style="margin-left: -150px; width: 25%;">
+                <p>================= SENHA =================</p>
+                <input class="mostrar" style="color: rgb(16, 163, 24); border: none;" id="visor-senha">
+            </div>
+        </div>
+        
+        <div class="col2">
+            <img src="img/retirar.png" type="button" style="width: 70%; margin-top: -6%;" onclick="retirarSenha()">
+        </div>
+    </div>
+
+</body>
+</html>
